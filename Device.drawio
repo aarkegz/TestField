@@ -1,9 +1,72 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.9">
   <diagram name="Page-1" id="lz7bLKVi2YMartpfqSo2">
-    <mxGraphModel>
+    <mxGraphModel dx="2430" dy="1073" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="rO13EA9QYpoG7izfs3yC-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;BaseDeviceOps&amp;lt;Addr&amp;gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ addr_range(): Range&amp;lt;Addr&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ handle_read(addr, width): Result&amp;lt;usize&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ handle_write(addr, width, data): Result&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="320" y="440" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="rO13EA9QYpoG7izfs3yC-6" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;PortIODevice&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ addr_range(): Range&amp;lt;Port&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ handle_read(addr, width): Result&amp;lt;usize&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ handle_write(addr, width, data): Result&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="70" y="310" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="rO13EA9QYpoG7izfs3yC-7" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;MMIODevice&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ addr_range(): Range&amp;lt;Addr&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ handle_read(addr, width): Result&amp;lt;usize&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ handle_write(addr, width, data): Result&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="320" y="310" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="rO13EA9QYpoG7izfs3yC-8" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;SysRegDevice&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ addr_range(): Range&amp;lt;RegIndex&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ handle_read(addr, width): Result&amp;lt;usize&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ handle_write(addr, width, data): Result&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="570" y="310" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="rO13EA9QYpoG7izfs3yC-9" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontStyle=1" edge="1" parent="1" source="rO13EA9QYpoG7izfs3yC-7">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="350" y="330" as="sourcePoint" />
+            <mxPoint x="440" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rO13EA9QYpoG7izfs3yC-11" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="rO13EA9QYpoG7izfs3yC-6" target="rO13EA9QYpoG7izfs3yC-1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="190" y="440" as="sourcePoint" />
+            <mxPoint x="510" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rO13EA9QYpoG7izfs3yC-12" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rO13EA9QYpoG7izfs3yC-8" target="rO13EA9QYpoG7izfs3yC-1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="450" y="420" as="sourcePoint" />
+            <mxPoint x="450" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rO13EA9QYpoG7izfs3yC-13" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Console&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ addr_range(): Range&amp;lt;Port&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ handle_read(addr, width): Result&amp;lt;usize&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ handle_write(addr, width, data): Result&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-30" y="180" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rO13EA9QYpoG7izfs3yC-14" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="rO13EA9QYpoG7izfs3yC-13" target="rO13EA9QYpoG7izfs3yC-6">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="200" y="420" as="sourcePoint" />
+            <mxPoint x="450" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rO13EA9QYpoG7izfs3yC-15" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="rO13EA9QYpoG7izfs3yC-16" target="rO13EA9QYpoG7izfs3yC-7">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="440" y="130" as="sourcePoint" />
+            <mxPoint x="690" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rO13EA9QYpoG7izfs3yC-16" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;InterruptController&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ addr_range(): Range&amp;lt;Port&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ handle_read(addr, width): Result&amp;lt;usize&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ handle_write(addr, width, data): Result&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="240" y="180" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rO13EA9QYpoG7izfs3yC-17" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="rO13EA9QYpoG7izfs3yC-18" target="rO13EA9QYpoG7izfs3yC-8">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="710" y="130" as="sourcePoint" />
+            <mxPoint x="710" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rO13EA9QYpoG7izfs3yC-18" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Timer&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ addr_range(): Range&amp;lt;Port&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ handle_read(addr, width): Result&amp;lt;usize&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ handle_write(addr, width, data): Result&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="510" y="180" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rO13EA9QYpoG7izfs3yC-19" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="930" y="224.17" as="sourcePoint" />
+            <mxPoint x="800" y="224.17" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
